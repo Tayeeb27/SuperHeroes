@@ -1,0 +1,78 @@
+
+.hero-form-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-form-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  /* Search button */
+  .hero-search-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .hero-search-results {
+    margin-top: 20px;
+  }
+  
+
+  .hero-search-results-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* List of search results */
+  .hero-search-result-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Individual search result item */
+  .hero-search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  /* Selected search result item */
+  .hero-search-result-item.selected {
+    background-color: #ff4766;
+    color: white;
+  }
+  
+  /* Add Selected Hero button */
+  .hero-add-button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  

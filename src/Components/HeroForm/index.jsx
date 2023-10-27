@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-// import {token} from '../api-key'
-
+import './HeroForm.css'
 const HeroForm = ({ addHero }) => {
   const [name, setName] = useState('');
   const [searchResults, setSearchResults] = useState([]);
@@ -27,6 +26,7 @@ const HeroForm = ({ addHero }) => {
   const handleAddHero = () => {
     if (selectedHero) {
       const heroData = {
+        id: selectedHero.id,
         name: selectedHero.name,
         description: selectedHero.biography['full-name'],
         image: selectedHero.image.url,
@@ -42,30 +42,31 @@ const HeroForm = ({ addHero }) => {
   };
 
   return (
-    <div>
-      <h2>Search for a Hero</h2>
+    <div className="hero-form-container"> 
+      <h2 className="hero-form-title">Search for a Hero</h2> 
       <input
         type="text"
         placeholder="Hero Name"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        className="hero-input" 
       />
-      <button onClick={handleSearch}>Search</button>
+      <button onClick={handleSearch} className="hero-search-button">Search</button> 
       {searchResults.length > 0 && (
-        <div>
-          <h3>Search Results:</h3>
-          <ul>
+        <div className="hero-search-results"> 
+          <h3 className="hero-search-results-title">Search Results:</h3> 
+          <ul className="hero-search-result-list"> 
             {searchResults.map((hero, index) => (
               <li
                 key={index}
                 onClick={() => selectHero(hero)}
-                className={selectedHero === hero ? 'selected' : ''}
+                className={`hero-search-result-item ${selectedHero === hero ? 'selected' : ''}`}
               >
                 {hero.name}
               </li>
             ))}
           </ul>
-          <button onClick={handleAddHero}>Add Selected Hero</button>
+          <button onClick={handleAddHero} className="hero-add-button">Add Selected Hero</button> {/* Apply the 'hero-add-button' class */}
         </div>
       )}
     </div>
