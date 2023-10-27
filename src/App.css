@@ -1,0 +1,72 @@
+/* App.css */
+body {
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+  color: #ff4500; /* Orange-Red */
+}
+
+h2 {
+  font-size: 24px;
+  color: #ff4500;
+}
+
+/* HeroList.css */
+.hero-card {
+  border: 2px solid #ff4500;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* HeroForm.css */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ff4500;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ff4500;
+  border-radius: 5px;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff6347; /* Tomato */
+}
+.selected {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* AddHeroPage.css */
+/* You can add more specific styles for the AddHeroPage here if needed. */
+
+/* HeroesPage.css */
+/* You can add more specific styles for the HeroesPage here if needed. */
