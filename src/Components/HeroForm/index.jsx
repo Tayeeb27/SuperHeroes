@@ -62,7 +62,11 @@ const HeroForm = ({ addHero }) => {
                 onClick={() => selectHero(hero)}
                 className={`hero-search-result-item ${selectedHero === hero ? 'selected' : ''}`}
               >
+              <div className='card' > 
+                <img src={hero.image.url}/>
                 {hero.name}
+                
+              </div>
               </li>
             ))}
           </ul>

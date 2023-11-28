@@ -6,6 +6,7 @@ const HeroList = ({ heroes }) => {
   return (
     <div>
       <h2>Hero List</h2>
+      <div className='HeroList'>
       {heroes && heroes.length > 0 ? (
         heroes.map((hero, index) => (
           <HeroCard key={index} hero={hero} />
@@ -13,6 +14,7 @@ const HeroList = ({ heroes }) => {
       ) : (
         <p>No heroes to display.</p>
       )}
+      </div>
     </div>
   );
 };

@@ -31,6 +31,7 @@ const HeroPage = () => {
 
   return (
     <div>
+      <div className= "heroSingle">
       <h1>{heroData.name}</h1>
       <img src={heroData.image.url} alt={heroData.name} />
 
@@ -63,7 +64,10 @@ const HeroPage = () => {
       </ul>
 
       <h2>Work</h2>
-      <p>{heroData.work.occupation}</p>
+      <ul>
+      <li>Work: {heroData.work.occupation}</li>
+      </ul>
+      </div>
     </div>
   );
 };

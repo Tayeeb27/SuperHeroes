@@ -37,15 +37,46 @@ h2 {
   font-size: 24px;
   color: #ff0000;
 }
+.heroSingle img{
+  width: 20%;
+  height:20%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.heroSingle ul {
+  
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: start;
+  margin-left: 500px;
+}
 
+.HeroList{
+  display: flex;
+  
+  flex-direction: row;
+}
 /* HeroList.css */
 .hero-card {
+  width: 400px;
+  height: 450px;
   border: 2px solid #ff0000;
   padding: 10px;
   margin: 10px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+.hero-card img{
+  width: 70%;
+  height:70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:60px;
 }
 
 /* HeroForm.css */
@@ -101,6 +132,14 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.batman {
+  width:10%;
+  height:10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 /* AddHeroPage.css */
 /* You can add more specific styles for the AddHeroPage here if needed. */

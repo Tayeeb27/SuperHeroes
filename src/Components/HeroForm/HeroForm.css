@@ -12,7 +12,7 @@
   }
   
   .hero-input {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -75,4 +75,13 @@
     cursor: pointer;
     margin-top: 10px;
   }
-  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card img{
+    width:20%;
+    height:20%;
+  }
